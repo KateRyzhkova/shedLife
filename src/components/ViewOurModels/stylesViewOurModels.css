@@ -1,0 +1,6 @@
+.viewOurModels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 57px 0 40px;
+}

@@ -1,0 +1,177 @@
+.topNavBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  align-items: center;
+}
+
+.topNavBar-list {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+  list-style: none;
+  padding: 0;
+}
+
+.topNavBar-list a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.topNavBar-list a:hover {
+  color: #5cada8;
+  transition: color 0.3s ease;
+}
+
+.topNavBar-list a::after {
+  content: "";
+  opacity: 0;
+  padding: 0;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  background: #5cada8;
+  transition: padding 0.3s ease;
+}
+
+.topNavBar-list a:hover::after {
+  padding: 0 50%;
+  opacity: 1;
+  transition: padding 0.3s ease;
+}
+
+.topNavBar-burger {
+  display: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  height: 31px;
+  padding: 0;
+}
+
+.topNavBar-burger div,
+.topNavBar-burger div::after,
+.topNavBar-burger div::before {
+  width: 50px;
+  height: 5px;
+  border-radius: 2px;
+  background: #000000;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.topNavBar-burger div::after,
+.topNavBar-burger div::before {
+  content: "";
+  position: absolute;
+}
+
+.topNavBar-burger div::before {
+  left: 0;
+  top: -8px;
+}
+
+.topNavBar-burger div::after {
+  left: 0;
+  bottom: -8px;
+}
+
+.topNavBar-burger:hover div {
+  background: #5cada8;
+  transition: all 0.3s ease;
+}
+
+.topNavBar-burger:hover div::after {
+  background: #5cada8;
+  transition: all 0.3s ease;
+}
+
+.topNavBar-burger:hover div::before {
+  background: #5cada8;
+  transition: all 0.3s ease;
+}
+
+.topNavBar-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  list-style: none;
+  background: #5cada8;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.topNavBar-menu a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.topNavBar-menu a:hover {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.topNavBar-menu a::after {
+  content: "";
+  opacity: 0;
+  padding: 0;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #fff;
+  transition: padding 0.3s ease;
+}
+
+.topNavBar-menu a:hover::after {
+  padding: 0 50%;
+  opacity: 1;
+  transition: padding 0.3s ease;
+}
+
+.topNavBar-menu-closeButton {
+  background: none;
+  border: none;
+  outline: none;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  width: fit-content;
+  font-size: 32px;
+}
+
+.topNavBar-menu-closeButton:hover {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 1000px) {
+  .topNavBar-list {
+    display: none;
+  }
+  .topNavBar-burger {
+    display: block;
+  }
+}

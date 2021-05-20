@@ -1,0 +1,54 @@
+.modalContainer {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sentMessageModal {
+  position: fixed;
+  top: 100px;
+  left: 40%;
+  background: #fff;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #254543;
+  border-radius: 3px;
+}
+
+.sentMessageModal h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.sentMessageModal p {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.sentMessageModal button {
+  border: 1px solid #254543;
+  color: #254543;
+  background: inherit;
+  font-size: 18px;
+  outline: none;
+  font-weight: 600;
+  padding: 15px 77px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.err {
+  border-color: rgb(243, 136, 136);
+}
+
+.err h3 {
+  color: rgb(243, 136, 136);
+}
+
+.err button {
+  border-color: rgb(243, 136, 136);
+  color: rgb(243, 136, 136);
+}

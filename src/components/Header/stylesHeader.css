@@ -1,0 +1,29 @@
+.headerTitleSection {
+  background: url("../../assets/img/ShedLifeBannerImage.png") center no-repeat;
+  background-size: cover;
+  padding: 230px 0;
+}
+
+.headerTitleSection-title {
+  width: 684px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 60px;
+  line-height: 70px;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 705px) {
+  .headerTitleSection-title {
+    width: 400px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .headerTitleSection-title {
+    width: 300px;
+  }
+}

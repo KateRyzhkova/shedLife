@@ -1,0 +1,62 @@
+.contactForm {
+  background: url("../../assets/img/backgroundContactForm.png") center no-repeat;
+  background-size: cover;
+  margin-top: -55px;
+  padding: 153px 0 88px;
+  color: #254543;
+  position: relative;
+}
+
+.contactForm-title {
+  max-width: 615px;
+}
+
+.contactForm-title p {
+  font-family: "Philosopher", sans-serif;
+  font-size: 24px;
+  line-height: 70px;
+}
+
+.contactForm-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactFormInput {
+  width: 368px;
+  margin-left: 10px;
+}
+
+.contactFormInput:first-child {
+  margin-left: 0;
+}
+
+.contactForm-button {
+  text-align: end;
+  margin-top: 45px;
+}
+
+.contactForm-button button {
+  border: 1px solid #254543;
+  color: #254543;
+  background: inherit;
+  font-size: 18px;
+  outline: none;
+  font-weight: 600;
+  padding: 28px 77px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .contactForm-inputs {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contactFormInput {
+    width: 300px;
+    margin-left: 0;
+  }
+}

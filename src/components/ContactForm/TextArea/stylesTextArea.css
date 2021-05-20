@@ -1,0 +1,24 @@
+.textArea {
+  margin-top: 10px;
+}
+
+.textArea textarea {
+  width: 100%;
+  resize: none;
+  background: inherit;
+  border: 1px solid #254543;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 18px;
+  color: #254543;
+  height: 360px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.textArea p {
+  font-size: 18px;
+  line-height: 70px;
+  font-weight: 600;
+  margin: 0;
+}
